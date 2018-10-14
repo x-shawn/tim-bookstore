@@ -16,13 +16,11 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
         <java.version>1.8</java.version>
-        <spring.boot.version>2.0.5.RELEASE</spring.boot.version>
 
+        <spring.boot.version>2.0.5.RELEASE</spring.boot.version>
+        <guava.version>20.0</guava.version>
         <sqlserver.version>6.1.0.jre8</sqlserver.version>
-        <junit.version>4.12</junit.version>
-        <mockito.version>1.9.5</mockito.version>
     </properties>
 
     <build>
@@ -47,22 +45,19 @@
         </dependency>
 
         <!-- db -->
+<!--
         <dependency>
             <groupId>com.microsoft.sqlserver</groupId>
             <artifactId>mssql-jdbc</artifactId>
             <version>${sqlserver.version}</version>
         </dependency>
+-->
 
-        <!-- unit test -->
+        <!-- util -->
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-all</artifactId>
-            <version>${mockito.version}</version>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
         </dependency>
     </dependencies>
 
